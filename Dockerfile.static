@@ -1,8 +1,0 @@
-#
-# 构建应用发布镜像，构建出的镜像体积最小
-#
-FROM scratch
-
-COPY target/x86_64-unknown-linux-musl/release/server /app
-EXPOSE 3000
-CMD ["/app"]
